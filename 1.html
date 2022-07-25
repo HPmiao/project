@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="dian">点击</div>
+    <div class="dian">点击</div>
+    <script>
+
+        // class Father {
+        //     constructor() {
+
+        //     }
+        // }
+        // class Son extends Father {
+        //     constructor(a) {
+        //         super();
+        //         this.a = a;
+        //     }
+        // }
+        // console.dir(son1);
+        // var son1 = new Son();
+        // // son1.prototype = {};
+        // // son1.prototype.a = 1;
+        // // console.log(son);
+        // console.dir(Son)
+        // console.dir(Father)
+        // console.dir(son1)
+        // // console.log(son1);
+        // var arr = [1, 2, 3, 5];
+        // arr.max();
+        var dian = document.querySelectorAll('.dian');
+        for (let i = 0; i < 10; i++) {
+            if (i < 2) {
+                dian[i].onclick = function () {
+                    console.log(i);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
